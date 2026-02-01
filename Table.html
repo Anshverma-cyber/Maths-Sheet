@@ -1,52 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables-Coding Unlocked</title>
-    <link rel="stylesheet" href="tablestyle.css">
-    <style>
-        body{
-    background-color: rgb(101, 203, 221);
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tables - Coding Unlocked</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ========== RESET ========== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-table {
-        border-collapse: collapse;
-        margin: auto;
-        text-align: center;
-        font-size: 16px;
-    }
-    th {
-        background-color: #ad0fa6;
-        color: white;
-        padding: 8px;
-        font-weight: bolder;
-    }
-    td {
-        padding: 8px;
-        font-weight: bold;
-    }
-    .t1 { background-color: #fdebd0; }
-    .t2 { background-color: #72baec; }
-    .t3 { background-color: #d5f5e3; }
-    .t4 { background-color: #f9e79f; }
-    .t5 { background-color: #f5b7b1; }
-    .t6 { background-color: #fdebd0; }
-    .t7 { background-color: #72baec; }
-    .t8 { background-color: #d5f5e3; }
-    .t9 { background-color: #f9e79f; }
-    .t10 { background-color: #f5b7b1; }
-    </style>
+
+body{
+  background-color: #baa5f3;
+}
+
+/* ========== NAVBAR ========== */
+nav{
+  background-color: rgb(126, 87, 233);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img{
+  width: 50px;
+  border-radius: 25px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+nav ul li{
+  margin: 6px 0;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+/* ========== HEADING ========== */
+.heading{
+  text-align: center;
+  margin: 20px 0;
+  color: #210c5a;
+}
+
+/* ========== TABLE ========== */
+.table-box{
+  overflow-x: auto;        /* mobile fix */
+  padding: 10px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+}
+
+th, td{
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: bold;
+}
+
+th{
+  background-color: #ad0fa6;
+  color: white;
+}
+
+/* Row colors */
+.t1{background:#fdebd0;}
+.t2{background:#72baec;}
+.t3{background:#d5f5e3;}
+.t4{background:#f9e79f;}
+.t5{background:#f5b7b1;}
+.t6{background:#fdebd0;}
+.t7{background:#72baec;}
+.t8{background:#d5f5e3;}
+.t9{background:#f9e79f;}
+.t10{background:#f5b7b1;}
+
+/* ========== DESKTOP ========== */
+@media screen and (min-width: 600px){
+  nav{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav ul{
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  nav ul li{
+    margin: 0 12px;
+  }
+}
+</style>
 </head>
+
 <body>
-    <div>
-        <hr color="black">
-    <h1><center>Tables - Coding Unlocked By Ansh</center></h1>
-    <hr color="black">
-    
-    </div>
-    
-    <table border="5" cellpadding="5"> 
-        <tr class="t1">
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">
+    <img src="logo2.jpg" alt="logo">
+    <h1>Coding Unlocked</h1>
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Courses</a></li>
+    <li><a href="#">Notes</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About Us</a></li>
+  </ul>
+</nav>
+
+<!-- HEADING -->
+<div class="heading">
+  <h1>Tables 1 to 10</h1>
+  <p>Coding Unlocked by Ansh</p>
+</div>
+
+<!-- TABLE -->
+<div class="table-box">
+<table>
+<tr class="t1">
             <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
         <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
         <th>11</th><th>12</th><th>13</th><th>14</th><th>15</th>
@@ -129,7 +232,8 @@ table {
     <td>210</td><td>220</td><td>230</td><td>240</td><td>250</td>
     <td>260</td><td>270</td><td>280</td><td>290</td><td>300</td>
 </tr>
+</table>
+</div>
 
-    </table>
 </body>
 </html>
