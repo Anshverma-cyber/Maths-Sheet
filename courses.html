@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Unlocked</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== RESET ===== */
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* ===== BODY FLEX FOR FOOTER ===== */
+    body{
+      background-color: #baa5f3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ===== NAVBAR ===== */
+    .bt{
+      background-color: rgb(126, 87, 233);
+      display: flex;
+      flex-direction: column; /* mobile */
+      align-items: center;
+      padding: 15px 20px;
+      color: white;
+    }
+
+    .logo{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo img{
+      width: 50px;
+      border-radius: 27px;
+    }
+
+    .bt ul{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    .bt ul li{
+      margin: 6px 0;
+    }
+
+    .bt ul a{
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+    }
+
+    .bt ul a:hover{
+      text-decoration: underline;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    .all{
+      flex: 1; /* IMPORTANT for footer */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .card{
+      background-color: rgb(249, 249, 255);
+      width: 295px;
+      height: 400px;
+      margin: 20px;
+      border-radius: 23px;
+      text-align: center;
+    }
+
+    .card img{
+      padding: 10px 0;
+      width: 275px;
+      height: 220px;
+      border-radius: 23px;
+    }
+
+    .card h2{
+      font-size: 26px;
+      margin-top: 10px;
+    }
+
+    .card p{
+      margin-top: 50px;
+    }
+
+    .card p a{
+      text-decoration: none;
+      color: #210c5a;
+      background-color: #dcd2f9;
+      padding: 8px 12px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card p a:hover{
+      background-color: #887da7;
+      color: black;
+    }
+
+    /* ===== FOOTER ===== */
+    footer{
+      background-color: #210C5A;
+      color: white;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    /* ===== DESKTOP ===== */
+    @media screen and (min-width: 600px){
+      .bt{
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .bt ul{
+        flex-direction: row;
+        margin-top: 0;
+      }
+
+      .bt ul li{
+        margin: 0 12px;
+      }
+
+      .all{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="bt">
+    <div class="logo">
+      <img src="logo2.jpg" alt="logo">
+      <h1>Coding Unlocked</h1>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="all">
+
+    <div class="card">
+      <img src="/Notes/Images/java.jpg" alt="Java">
+      <h2>Java Tutorials</h2>
+      <p><a href="#">Click here to open</a></p>
+    </div>
+
+    
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Powered By Ansh 😊😊
+  </footer>
+
+</body>
+</html>
